@@ -1,0 +1,70 @@
+/* START OF ABOUT ME PAGE ----------------------------------------------------------------------------------------------------*/   
+.aboutimage img{
+    width:100%;
+    height:800px;
+    bottom:0;
+    margin-bottom: 0;
+    -webkit-clip-path: polygon(0 13%, 1600px 0, 1600px 87%, 0 100%);
+    clip-path: polygon(0 13%, 1600px 0, 1600px 87%, 0 100%);
+}
+    
+.aboutimage1 img{
+    width:100%;
+    height:800px;
+    bottom:0;
+    margin-bottom: 0;
+    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+    clip-path: polygon(0 0, 1600px 13%, 1600px 100%, 0 87%);
+}
+    
+.abouttext{
+    font-size:1.5em;
+}
+    
+iframe{
+    position: relative;
+    top:5em;
+}
+    
+@media only screen and (max-width:992px){
+    iframe{
+    height:600px;
+}
+    
+.aboutimage img{
+    height:600px;
+}
+    
+.aboutimage1 img{
+    height:600px;
+}
+    
+.abouttext{
+    font-size:1.2em;
+  }
+}
+    
+@media only screen and (max-width:768px){
+    iframe{
+    height:400px;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:2em;
+    position: relative;
+    top:3em;
+}
+    
+.aboutimage img{
+    height:400px;
+}
+    
+.aboutimage1 img{
+    height:400px;
+}
+    
+.abouttext{
+    font-size:1em;
+  }
+}
+    
+/* END OF ABOUT ME PAGE ----------------------------------------------------------------------------------------------------*/

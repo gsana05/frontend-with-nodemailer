@@ -1,0 +1,20 @@
+   /*------START OF QUIZ -------------------------------------------------------------------------------------------*/
+   .quiz{
+    margin:20px auto;
+    padding:25px;
+    border: 5px solid black;
+    border-radius:10px;
+}
+    
+.quizmodelbtn{
+    width:10em;
+    height:2.5em;   
+}
+    
+.quizchoice{
+    margin:0.5em;
+    width:10em;
+    height:3em;
+}
+
+/*-----END OF QUIZ -----------------------------------------------------------------------------------------------*/

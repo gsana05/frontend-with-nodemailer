@@ -1,0 +1,135 @@
+extends layout.jade
+block content
+  section#content 
+  body.bg-dark
+
+    img.card-img.mainimage(src='images/etthink.jpg', alt='Card image')
+  .card-img-overlay
+    h4.contactintro.text-center.mt-5.mainimagetext THE CHAMPIONS QUIZ
+    h4.contactintro.text-center.mt-1.mainimagetext GIVE IT A TRY
+
+    .container
+  .row.justify-content-md-center.ml-1.mr-1
+    .col-lg-8.text-center.mt-5.mb-1
+      h1.mb-1.text-white QUIZ TIME
+      p.text-center.text-white.mb-1
+            |Thanks for checking in! You made it to "The Spot!" Whether on the road or on social media,
+            | we're always creating new and relevant content with you in mind.  We travel quite a deal
+            | throughout the year and chances are, we'll be In a city near you!
+            | So, please take a moment to check out our various events, tour dates, and locations.
+            | We'd love to see you there!!
+
+    .quiz.container.justify-content-center.bg-light
+     header#resetquiz.mt-5
+      h1.text-center General Knowledge Quiz
+      p.text-center
+        | Test your knowledge in 
+        strong general knowledge
+        section.mt-5
+
+         form(name='quizForm', onsubmit='return submitAnswers()')
+          h3.text-center.font-italic#question101 1. WHO IS THE CURRENT CHAMPIONS LEAGUE WINNERS?
+          .row.justify-content-center
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q1a.my-2(type='radio', name='q1', value='a', autocomplete='off')
+             |  BARCELONA
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q1b.my-2(type='radio', name='q1', value='b', autocomplete='off')
+             |  REAL MADRID
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q1c.my-2(type='radio', name='q1', value='c', autocomplete='off')
+             |  PSG
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q1d.my-2(type='radio', name='q1', value='d', autocomplete='off')
+             |  CHELSEA
+
+          h3.text-center.font-italic#question101 2. HOW MANY TIMES HAVE LIVERPOOL WON THE CHAMPIONS LEAGUE?
+          .row.justify-content-center
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q2a.my-2(type='radio', name='q2', value='a', autocomplete='off')
+             |  5
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q2b.my-2(type='radio', name='q2', value='b', autocomplete='off')
+             |  7
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q2c.my-2(type='radio', name='q2', value='c', autocomplete='off')
+             |  2
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q2d.my-2(type='radio', name='q2', value='d', autocomplete='off')
+             |  3
+
+          h3.text-center.font-italic#question101 3. WHERE WAS THE FIRST WORLD CUP?
+          .row.justify-content-center
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q3a.my-2(type='radio', name='q3', value='a', autocomplete='off')
+             |  GERMANY
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q3b.my-2(type='radio', name='q3', value='b', autocomplete='off')
+             |  FRANCE
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q3c.my-2(type='radio', name='q3', value='c', autocomplete='off')
+             |  BRAZIL
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q3d.my-2(type='radio', name='q3', value='d', autocomplete='off')
+             |  URUGUAY
+
+          h3.text-center.font-italic#question101 4. HAS RONALDO EVER SCORED AT WEMBLEY?
+          .row.justify-content-center
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q4a.my-2(type='radio', name='q4', value='a', autocomplete='off')
+             |  NO
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q4b.my-2(type='radio', name='q4', value='b', autocomplete='off')
+             |  YES
+
+          h3.text-center.font-italic#question101 5. HOW MANY PREMIER LEAGUE GOALS DID ALAN SHEARER SCORE?
+          .row.justify-content-center
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q5a.my-2(type='radio', name='q5', value='a', autocomplete='off')
+             |  187
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q5b.my-2(type='radio', name='q5', value='b', autocomplete='off')
+             |  240
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q5c.my-2(type='radio', name='q5', value='c', autocomplete='off')
+             |  160
+            label.btn.btn-primary.font-weight-bold.quizchoice
+             input#q5d.my-2(type='radio', name='q5', value='d', autocomplete='off')
+             |  260
+            
+          
+
+          .container.text-center
+             .col-md            
+                     input.btn.btn-success.my-3.quizend.quizchoice(type='submit', value='Submit Answers', data-toggle='modal', data-target='#ModalLong101')
+                         
+
+                    #ModalLong101.modal.fade(tabindex='-1', role='dialog', aria-labelledby='ModalLongTitle', aria-hidden='true')
+                .modal-dialog.modal-lg.bg-light(role='document')
+                    .modal-content
+                    h5#ModalLongTitle.mt-3.modal-title THE CHAMPIONS QUIZ 
+                    .modal-header
+                    .modal-body
+                        #results
+                        #bullshit 
+                           h1.my-3.questionanswers THE QUIZ ANSWERS
+                             h5 1. WHO IS THE CURRENT CHAMPIONS LEAGUE WINNERS? 
+                             p.font-weight-bold.text-success Real Madrid
+                             h5 2. HOW MANY TIMES HAVE LIVERPOOL WON THE CHAMPIONS LEAGUE?
+                             p.font-weight-bold.text-success 5
+                             h5 3. WHERE WAS THE FIRST WORLD CUP?
+                             p.font-weight-bold.text-success URUGUAY 
+                             h5 4. HAS RONALDO EVER SCORED AT WEMBLEY?
+                             p.font-weight-bold.text-success Yes
+                             h5 5. HOW MANY PREMIER LEAGUE GOALS DID ALAN SHEARER SCORE?
+                             p.font-weight-bold.text-success 260
+                         
+                        #sugar
+                        .quizinfo.text-center.mt-3.text-danger.font-weight-bold 
+                    .modal-footer
+                    #conclusion
+                    button.btn.btn-success.font-weight-bold.mb-3.quizmodelbtn(type='button', data-dismiss='modal') Close
+                        
+                        #results
+                        .text-center.mt-3 
+                        .row.justify-content-center.mt-5

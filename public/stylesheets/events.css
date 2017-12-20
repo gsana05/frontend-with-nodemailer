@@ -1,0 +1,26 @@
+ /*----START OF LIVE EVENTS ------------------------------------------------------------------------------------*/
+ .buttsy{
+    border-bottom: 2px solid black;
+}
+    
+@media only screen and (max-width: 768px){
+    .eventsbutton {
+    font-size:14px;
+}
+    
+.eventsheader{
+    font-size:20px;
+}
+    
+.eventdates{
+    font-size:20px;
+}
+    
+.eventupcoming{
+    font-size:24px;
+  }
+}
+    
+/*-----------END OF LIVE EVENTS -------------------------------------------------------------------------------*/
+    
+    

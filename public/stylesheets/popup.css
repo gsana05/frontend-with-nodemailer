@@ -1,0 +1,21 @@
+/*-------START OF POP UP BLOG -------------------------------------------------------------------------------------*/
+/* GENERAL STYLES FOR BOX AND OVERLAY */
+.box {
+        overflow: hidden;
+        background-color: rgb(197, 197, 197);
+        text-align: center;
+        position: relative;
+    }
+        
+/* SLIDE IN */
+        
+.jena{
+        position:relative;
+        bottom: 8em;
+}
+        
+        
+        
+        
+        /*-----END OF POP UP BLOG ------------------------------------------------------------------------------------------*/
+        

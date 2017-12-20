@@ -1,0 +1,70 @@
+extends layout.jade
+block content
+  section#content 
+  body.bg-dark
+
+    img.card-img.mainimage(src='images/etfaded.jpg', alt='Card image')
+  .card-img-overlay
+    h1.text-center.text-warning.font-weight-bold.emailsentmsg #{msg}
+    h4.contactintro.text-center.mt-5.mainimagetext CONTACT US
+    h4.contactintro.text-center.mt-1.mainimagetext COME AND VISIT US
+      
+      .aboutme(style='background-color:#DDDDDD;')
+  .container-fluid
+    .row.justify-content-md-center
+      .col-lg-8.text-center.mt-3
+        h2.text-center.my-3.display-4.font-weight-bold.eventsheader.text-white(style='color:black;')
+          | WELCOME TO THE EVENTS
+        p.text-center.abouttext.text-white(style='color:black;')
+          | He is the author of six internationally bestselling books, including most recently New York Times #1 bestsellers UNSHAKEABLE:
+          | Your Financial Freedom Playbook and MONEY: Master the Game. Robbins has empowered more than 50 million people from 100 countries
+          | through his audio, video and life training programs. He created the #1 personal and professional development program of all time,
+          | and more than 4 million people have attended his live seminars.  
+
+
+    .row.justify-content-center
+    .col-md-6
+    .container.my-5.bg-light
+      .row.justify-content-center
+        .well.col-md-offset-3.col-md-12
+          .card-body
+            form#register-form(action='send', method='post', novalidate='novalidate')
+              h2.text-info.my-3 GET IN TOUCH
+              p
+                i #{msg}
+              #form-content
+                .form-group
+                  label(for='name') Name
+                  input.form-control.is-valid(type='text', name='name', placeholder='Name')
+                .form-group
+                  label(for='email') Email
+                  input.form-control.is-valid(type='email', name='email', placeholder='Email Address')
+                .form-group
+                  label(for='comments') Comment
+                  textarea.form-control.is-valid(type='text', name='comments', rows='6', placeholder='Comment')
+                .form-group
+                  input.btn.btn-info.btn-lg(type='submit', name='submit')
+   
+    
+ 
+
+         
+       
+  
+    
+
+   
+
+   
+
+        
+
+
+    
+    
+
+
+
+
+
+

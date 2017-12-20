@@ -1,0 +1,41 @@
+header 
+ nav.navbar.fixed-top.navbar-expand-xl.container-fullwidth.navbarabout
+  button.navbar-toggler(data-toggle='collapse', data-target='#nav-content',aria-controls='nav-content', aria-expanded='false', aria-label='Toggle navigation')
+    #wrapper
+      .main-item.menu
+        span.line.line01
+        span.line.line02
+        span.line.line03
+  // Brand
+
+  a.navbar-brand.ml-5(href='/')
+    img(src='images/etlogo.jpeg', alt='Smiley face', width='250', height='50')
+  // Links
+  #nav-content.collapse.navbar-collapse.justify-content-end.dropdownstyle
+    ul.navbar-nav
+      li.nav-item
+        a.nav-link.mx-3(href='/about') ABOUT ME
+      li.nav-item.dropdown
+
+        a#navbarDropdownMenuLink.nav-link.dropdown-toggle.mx-4(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          | GALLERY
+        .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+          a.dropdown-item.font-italic(href='/lagallery') LOS ANGELES
+          a.dropdown-item.font-italic(href='/dubai') DUBAI
+      li.nav-item
+        a.nav-link.mx-3(href='/events') LIVE EVENTS
+      li.nav-item.dropdown
+
+        a#navbarDropdownMenuLink.nav-link.dropdown-toggle.mx-4(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          | KNOWLEDGE
+        .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+          a.dropdown-item.font-italic(href='/blog') BLOG 
+          a.dropdown-item.font-italic(href='/quiz') QUIZ
+      li.nav-item
+        a.nav-link.mx-3(href='/shop') SHOP
+      li.nav-item
+        a.nav-link.mx-3(href='/contact') GET IN TOUCH
+      li.nav-item
+       
+
+

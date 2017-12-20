@@ -1,0 +1,153 @@
+/* START OF HOME PAGE--------------------------------------------------------------------------------------------------*/
+    
+.homepicture{
+    width:100%;
+    height:670px;
+    bottom:0;
+    margin-bottom: 0; 
+    }
+    
+.intro{
+    position: relative;
+    top:4em;
+    font-weight:600;
+    color:white;
+    font-size: 3em;
+    margin-left: 3rem;
+}
+    
+.intro1{
+    position: relative;
+    top:4em;
+    font-weight:300;
+    color:white;
+    font-size: 3em;
+    margin-left: 3rem;
+}
+    
+.signupnow{
+    position: relative;
+    top:12em;
+    width:15em;
+    height:4em;
+    font-weight: 800;
+    margin:3rem;
+    text-align:center;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+    
+.signupnow:hover{
+    background-color:#068D92;
+}
+    
+.homecardimg{
+        position: relative;
+        top:0em;
+    }
+    
+.card{
+    border:0;
+    /*box-shadow: 10px 10px 5px #888888;*/
+    }
+    
+.reviewopacity{
+    -webkit-filter: opacity(30%); /* Safari 6.0 - 9.0 */
+    filter: opacity(30%);
+}
+    
+.reviewtext{
+    position: relative;
+    top:5em;
+    font-size:3em;    
+}
+    
+.reviewbtn{
+    position: relative;
+    top:1em;
+    width:15em;
+    height:4em;
+    font-weight: 800;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+    
+@media only screen and (max-width:1200px){
+    .reviewtext{
+    font-size:2.5em;
+    position: relative;
+    top:3em;
+  }
+}
+    
+@media only screen and (max-width:992px){
+    .reviewtext{
+    font-size:2em;
+    position: relative;
+    top:2em;
+  }
+}
+    
+@media only screen and (max-width:768px){
+    .reviewtext{
+    font-size:2em;
+    position: relative;
+    top:1.8em;
+  }
+}
+    
+@media only screen and (max-width:576px){
+    .homepicture{
+    content: url("/images/etgrey.jpg");
+    }
+    .intro{
+    font-size:30px;
+    position: relative;
+    top:7em;
+    text-align:center;
+    margin:0rem;
+}
+    
+.intro1{
+    font-size:30px;
+    position: relative;
+    top:7em;
+    text-align:center;
+    margin:0rem;
+}
+    
+.signupnow{
+    margin:0.5rem;
+    width: 12em;
+    position: relative;
+    top:15em;
+    margin: 0 auto;
+}
+    
+.reviewtext{
+    font-size: 2em;
+}
+    
+.review{
+    height:600px;
+  }
+}
+
+@media only screen and (max-width:440px){
+    .reviewtext{
+    font-size:1.5em;
+    }
+    .review{
+    height:400px;
+    } 
+    .reviewbtn{
+    width:10em;
+  }
+}
+/* END OF HOME PAGE -----------------------------------------------------------------------------------------------------*/

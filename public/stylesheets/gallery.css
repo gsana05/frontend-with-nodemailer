@@ -1,0 +1,312 @@
+/* START OF LA GALLERY PAGE -----------------------------------------------------------------------------------------------*/
+.imageGallery{
+        margin: 0% auto;
+        padding: 0px;
+        border-radius: 10px;
+        overflow: hidden;
+}
+        
+.lightbox-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+        
+.imageGallery .lightbox-gallery figure > img, .imageGallery .lightbox-gallery div > img {
+        width:20em;
+        height:12em;
+        display: block;
+}
+        
+.imageGallery .lightbox-gallery figure, .imageGallery .lightbox-gallery div {
+        margin: 10px;
+        flex-basis: 180px;
+}
+        
+@media only screen and (max-width: 480px) {
+        .lightbox-gallery {
+        flex-direction: column;
+        align-items: center;
+}
+        
+.imageGallery .lightbox > figure .imageGallery .lightbox > div {
+        margin-bottom: 10px;
+    }
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*Lighbox CSS*/ /* the LIGHTBOX class was created in javascript */
+        
+        
+        
+        
+        .overlay{
+        
+        display: none;
+        
+        width: 100%;
+        
+        height: 100%;
+        
+        background-color: rgba(0,0,0,.9);
+        
+        position: fixed;
+        
+        top: 0;
+        
+        left: 0;
+        
+        z-index: 20;
+        
+        padding-top: 30px;
+        
+        box-sizing: border-box;
+        
+        }
+        
+        
+        
+        
+        .overlay img{
+        
+        position: relative;
+        
+        top:5em;
+        
+        width:50%;
+        
+        height:30rem;
+        
+        display: block;
+        
+        margin: auto;
+        
+        }
+        
+        
+        
+        
+        .overlay .caption{
+        
+        position: relative;
+        
+        top:5em;
+        
+        margin: 15px auto;
+        
+        width: 50%;
+        
+        text-align: center;
+        
+        font-size: 1em;
+        
+        line-height: 1.5;
+        
+        font-weight: 700;
+        
+        color: #eee;
+        
+        }
+        
+        figure {
+        
+        width:12em;
+        
+        height:12em;
+        
+        margin: 10px;
+        
+        padding: 0;
+        
+        background: #FFFFFF;
+        
+        overflow: hidden;
+        
+        } 
+        
+        /* Zoom In #1 */
+        
+        .lightbox-gallery figure img {
+        
+        -webkit-transform: scale(1);
+        
+        transform: scale(1);
+        
+        -webkit-transition: .3s ease-in-out;
+        
+        transition: .3s ease-in-out;
+        
+        }
+        
+        .lightbox-gallery figure:hover img {
+        
+        -webkit-transform: scale(1.5 );
+        
+        transform: scale(1.5);
+        
+        }
+        
+        
+        
+        
+        @media only screen and (max-width:
+        992px){
+        
+        .overlay img{
+        
+        width:80%;
+        
+        }
+        
+        }
+        
+        @media only screen and (max-width:
+        768px){
+        
+        .overlay img{
+        
+        height:20rem;
+        
+        }
+        
+        }
+        
+        @media only screen and (max-width:
+        500px){
+        
+        .overlay img{
+        
+        width:99%;
+        
+        }
+        
+        .imageGallery .lightbox-gallery div > img{
+        
+        width:15em;
+        
+        }
+        
+        }
+        
+        
+        
+        
+        /* start of la gallery hover effect */
+        
+        .hoverlife div {
+        
+        position: relative;
+        
+        }
+        
+        .hoverlife div::before {
+        
+        position: absolute;
+        
+        top: 50%;
+        
+        left: 50%;
+        
+        z-index: 2;
+        
+        display: block;
+        
+        content: '';
+        
+        width: 0;
+        
+        height: 0;
+        
+        background: rgba(255,255,255,.2);
+        
+        border-radius: 100%;
+        
+        -webkit-transform: translate(-50%, -50%);
+        
+        transform: translate(-50%, -50%);
+        
+        opacity: 0;
+        
+        }
+        
+        .hoverlife div:hover::before {
+        
+        -webkit-animation: circle .75s;
+        
+        animation: circle .75s;
+        
+        }
+        
+        @-webkit-keyframes circle {
+        
+        0% {
+        
+        opacity: 1;
+        
+        }
+        
+        40% {
+        
+        opacity: 1;
+        
+        }
+        
+        100% {
+        
+        width: 120%;
+        
+        height: 120%;
+        
+        opacity: 0;
+        
+        }
+        
+        }
+        
+        @keyframes circle {
+        
+        0% {
+        
+        opacity: 1;
+        
+        }
+        
+        40% {
+        
+        opacity: 1;
+        
+        }
+        
+        100% {
+        
+        width: 120%;
+        
+        height: 120%;
+        
+        opacity: 0;
+        
+        }
+        
+        }
+        
+        /* end of la gallery hover effect */
+        
+        
+        
+        
+        /* END OF LA GALLERY PAGE ----------------------------------------------------------------------------------------------------*/

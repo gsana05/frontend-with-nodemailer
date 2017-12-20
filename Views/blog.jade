@@ -1,0 +1,172 @@
+extends layout.jade
+block content
+  section#content 
+  body.bg-dark
+
+   img.card-img.mainimage(src='images/eric-thomas-quotes.jpg', alt='Card image')
+  .card-img-overlay
+   h4.contactintro.text-center.mt-5.mainimagetext.text-dark BLOG
+   h4.contactintro.text-center.mt-1.mainimagetext.text-dark CHECK US OUT
+
+    .container
+  .row.justify-content-md-center.ml-1.mr-1
+    .col-lg-8.text-center.mt-5.mb-1
+      h1.mb-1.text-white BLOG
+      p.text-center.mb-1.text-white
+            |Thanks for checking in! You made it to "The Spot!" Whether on the road or on social media,
+            | we're always creating new and relevant content with you in mind. We travel quite a deal
+            | throughout the year and chances are, we'll be In a city near you!
+            | So, please take a moment to check out our various events, tour dates, and locations.
+            | We'd love to see you there!!
+
+    .blog
+    .container.mt-3.mb-5.text-center
+      .row
+        .col-md
+          .card.mt-5.border-0
+            .slide-in
+              .box
+                .card-body
+                  p.card-text THE GRIND BEFORE THE GRIND
+                img.card-img(style='height:250px;', src='images/etblue.jpeg', alt='Card image cap')
+                p.card-text.mt-3 DESCRIPTION OF BLOG
+                .overlay
+                button.btn.btn-lg.btn-info.font-weight-bold.jena(type='button', data-toggle='modal', data-target='#ModalLong101')
+                    | Find out more
+
+         .col-md
+          .card.mt-5.border-0
+            .slide-in
+              .box
+                .card-body
+                  p.card-text This image is in the middle
+                img.card-img(style='height:250px;', src='images/etblue.jpeg', alt='Card image cap')
+                p.card-text.mt-3 of a card.
+                .overlay
+                button.btn.btn-lg.btn-info.font-weight-bold.jena(type='button', data-toggle='modal', data-target='#ModalLong102')
+                    | Find out more
+
+        .w-100
+
+        .col-md
+          .card.mt-5.border-0
+            .slide-in
+              .box
+                .card-body
+                  p.card-text This image is in the middle
+                img.card-img(style='height:250px;', src='images/etblue.jpeg', alt='Card image cap')
+                p.card-text.mt-3 of a card.
+                .overlay
+                button.btn.btn-lg.btn-info.font-weight-bold.jena(type='button', data-toggle='modal', data-target='#ModalLong103')
+                    | Find out more
+
+         .col-md
+          .card.mt-5.border-0
+            .slide-in
+              .box
+                .card-body
+                  p.card-text This image is in the middle
+                img.card-img(style='height:250px;', src='images/etblue.jpeg', alt='Card image cap')
+                p.card-text.mt-3 of a card.
+                .overlay
+                button.btn.btn-lg.btn-info.font-weight-bold.jena(type='button', data-toggle='modal', data-target='#ModalLong104')
+                    | Find out more
+
+        .w-100
+
+        .col-md
+          .card.mt-5.border-0
+            .slide-in
+              .box
+                .card-body
+                  p.card-text This image is in the middle
+                img.card-img(style='height:250px;', src='images/etblue.jpeg', alt='Card image cap')
+                p.card-text.mt-3 of a card.
+                .overlay
+                button.btn.btn-lg.btn-info.font-weight-bold.jena(type='button', data-toggle='modal', data-target='#ModalLong105')
+                    | Find out more
+
+         .col-md
+          .card.mt-5.border-0
+            .slide-in
+              .box
+                .card-body
+                  p.card-text This image is in the middle
+                img.card-img(style='height:250px;', src='images/etblue.jpeg', alt='Card image cap')
+                p.card-text.mt-3 of a card.
+                .overlay
+                button.btn.btn-lg.btn-info.font-weight-bold.jena(type='button', data-toggle='modal', data-target='#ModalLong106')
+                    | Find out more
+
+
+              //START OF POP UPS 
+
+             #ModalLong101.modal.fade.mt-5(tabindex='-1', role='dialog', aria-labelledby='ModalLongTitle', aria-hidden='true')
+                 .modal-dialog.modal-lg.bg-light(role='document')
+                     .modal-content
+                     .modal-header
+                        h5#ModalLongTitle.modal-title Modal title
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                     .modal-body
+                         | LUCAS
+                     .modal-footer
+                         button.btn.btn-secondary(type='button', data-dismiss='modal') Close      
+
+             #ModalLong102.modal.fade.mt-5(tabindex='-1', role='dialog', aria-labelledby='ModalLongTitle', aria-hidden='true')
+                 .modal-dialog.modal-lg.bg-light(role='document')
+                     .modal-content
+                     .modal-header
+                        h5#ModalLongTitle.modal-title Modal title
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                     .modal-body
+                         | Naomi
+                     .modal-footer
+                         button.btn.btn-secondary(type='button', data-dismiss='modal') Close  
+
+             #ModalLong103.modal.fade.mt-5(tabindex='-1', role='dialog', aria-labelledby='ModalLongTitle', aria-hidden='true')
+                 .modal-dialog.modal-lg.bg-light(role='document')
+                     .modal-content
+                     .modal-header
+                        h5#ModalLongTitle.modal-title Modal title
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                     .modal-body
+                         | HELLOOOO
+                     .modal-footer
+                         button.btn.btn-secondary(type='button', data-dismiss='modal') Close      
+
+             #ModalLong104.modal.fade.mt-5(tabindex='-1', role='dialog', aria-labelledby='ModalLongTitle', aria-hidden='true')
+                 .modal-dialog.modal-lg.bg-light(role='document')
+                     .modal-content
+                     .modal-header
+                        h5#ModalLongTitle.modal-title Modal title
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                     .modal-body
+                         | SUGARRR
+                     .modal-footer
+                         button.btn.btn-secondary(type='button', data-dismiss='modal') Close 
+
+              #ModalLong105.modal.fade.mt-5(tabindex='-1', role='dialog', aria-labelledby='ModalLongTitle', aria-hidden='true')
+                 .modal-dialog.modal-lg.bg-light(role='document')
+                     .modal-content
+                     .modal-header
+                        h5#ModalLongTitle.modal-title Modal title
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                     .modal-body
+                         | STEVEN
+                     .modal-footer
+                         button.btn.btn-secondary(type='button', data-dismiss='modal') Close      
+
+             #ModalLong106.modal.fade.mt-5(tabindex='-1', role='dialog', aria-labelledby='ModalLongTitle', aria-hidden='true')
+                 .modal-dialog.modal-lg.bg-light(role='document')
+                     .modal-content
+                     .modal-header
+                        h5#ModalLongTitle.modal-title Modal title
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                     .modal-body
+                         | SANTAAA
+                     .modal-footer
+                         button.btn.btn-secondary(type='button', data-dismiss='modal') Close 
+
+             
+
+            
